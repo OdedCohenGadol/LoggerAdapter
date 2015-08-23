@@ -26,17 +26,24 @@ examples of using:
 1.) 
 
 catch (Exception exp)
+
 {
+
   Logger.LogIt(Logger.LogType.Fatal, Logger.ActionType.Upload, Logger.SystemEntity.CVFile, null, null, exp);
+  
 }
 
 2.)
 
 catch (Exception exp)
+
 {
+
     Logger.LogIt(Logger.LogType.Fatal, Logger.ActionType.Submit, Logger.SystemEntity.Form, null, "trying to send contact form", exp);
+    
 }
 
 
 3.)
+
  Logger.LogIt(Logger.LogType.Info, Logger.ActionType.Download, Logger.SystemEntity.User, null, "START Download Important file Process", null);
