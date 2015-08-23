@@ -17,7 +17,7 @@ id = the entity id envovled - not mandatory
 
 customMessage = custom message - not mandatory - especially @ info logs, because the log will take the exception message anyway
 
-e = the exception itself
+ex = the exception itself
 
 public static void LogIt(LogType logType,ActionType actionType, SystemEntity entity, int? id = null, string customMessage = null ,Exception ex = null)
 
