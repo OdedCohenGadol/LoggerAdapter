@@ -7,11 +7,17 @@ instead of using the primitive logger, i've made a logger that can have a very s
 Prototype explanation:
 
 /// <param name="logType">log type : info, error or Fatal</param>
+
 /// <param name="actionType">the action that was running  (eg "send")</param>
+
 /// <param name="entity">the entity involved (eg user/job)</param>
+
 /// <param name="id">the entity id envovled - not mandatory</param>
+
 /// <param name="customMessage">custom message - not mandatory - especially @ info logs, because the log will take the exception message anyway</param>
+
 /// <param name="ex">the exception itself</param>
+
 public static void LogIt(LogType logType,ActionType actionType, SystemEntity entity, int? id = null, string customMessage = null ,Exception ex = null)
 
 
