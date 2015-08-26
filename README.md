@@ -34,6 +34,11 @@ catch (Exception exp)
   Logger.LogIt(Logger.LogType.Fatal, Logger.ActionType.Upload, Logger.SystemEntity.CVFile, null, null, exp);
   
 }
+Output @ fatal log file: 
+2015-08-06 16:44:39,137 [49] FATAL LoggerAdapter.Logger [(null)] - FATAL:  in Upload Action for CV File  :
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at XXXXXXXXXXXXXXXXXXXXXXXXX(HttpPostedFileBase file, FormCollection form) in 
+   d:\Projects\XXXXXXXX.cs:line 485
 
 2.)
 
@@ -49,3 +54,6 @@ catch (Exception exp)
 3.)
 
  Logger.LogIt(Logger.LogType.Info, Logger.ActionType.Download, Logger.SystemEntity.User, null, "START Download Important file Process", null);
+ 
+ Output @ info log file : 
+ 2015-08-06 15:48:51,609 [19] INFO  LoggerAdapter.Logger [(null)] - Information:  in Create Action for User  START Download Important file Process
